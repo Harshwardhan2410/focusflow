@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "FocusFlow – Study Timer & Tasks",
+  "version": "1.0.0",
+  "description": "A Pomodoro study timer with a daily to-do list. Stay focused and track your study sessions.",
+  "permissions": ["storage", "alarms", "notifications"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FocusFlow",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  },
+  "background": { "service_worker": "background.js" },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

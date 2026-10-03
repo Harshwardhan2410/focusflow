@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusFlow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>🎯 FocusFlow</h1>
+    <span class="pill">Today: <b id="sessions">0</b> sessions</span>
+  </header>
+
+  <section class="timer">
+    <div id="mode" class="mode">Focus</div>
+    <div id="time" class="time">25:00</div>
+    <div class="track"><div id="bar"></div></div>
+    <div class="row">
+      <button id="startBtn" class="primary">Start</button>
+      <button id="resetBtn">Reset</button>
+      <button id="switchBtn">Skip</button>
+    </div>
+  </section>
+
+  <section class="settings">
+    <label>Focus (min) <input id="focusMin" type="number" min="1" max="120"></label>
+    <label>Break (min) <input id="breakMin" type="number" min="1" max="60"></label>
+  </section>
+
+  <section class="tasks">
+    <h2>Tasks</h2>
+    <div class="row">
+      <input id="taskInput" type="text" placeholder="Add a study task…" maxlength="80">
+      <button id="addBtn" class="primary">Add</button>
+    </div>
+    <ul id="list"></ul>
+    <p id="empty" class="empty">No tasks yet. Add one above.</p>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
